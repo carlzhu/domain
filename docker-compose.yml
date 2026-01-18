@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: zhurg-website
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+    networks:
+      - web-network
+    volumes:
+      # 如果需要SSL证书，取消注释下面的行
+      # - ./ssl:/etc/nginx/ssl:ro
+      # 如果需要自定义nginx配置，取消注释下面的行
+      # - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      - TZ=Asia/Shanghai
+    labels:
+      - "com.zhurg.description=Personal Website"
+      - "com.zhurg.version=1.0"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  web-network:
+    driver: bridge

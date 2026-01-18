@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="ZHURG - Full-Stack Freelance Developer | 全栈自由职业开发者">
+    <meta name="keywords" content="Full-Stack,Freelance,IoT,E-commerce,Big Data,全栈开发,自由职业,新能源,物联网,电商,大数据">
+    <title>ZHURG - Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css?v=1.0.2">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <canvas id="particles"></canvas>
+    
+    <!-- 语言切换 -->
+    <div class="lang-switcher">
+        <button class="lang-btn" data-lang="zh-CN">中文</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">ZHURG</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav_home">首页</a></li>
+                <li><a href="#about" data-i18n="nav_about">关于</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">技能</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">项目</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页横幅 -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-effects">
+            <div class="grid-overlay"></div>
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+            <div class="glow-orb glow-orb-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-main">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span data-i18n="hero_badge">LEVEL 99 DEVELOPER</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-name glitch" data-text="ZHURG">ZHURG</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-i18n="hero_subtitle">全栈自由职业开发者</p>
+                
+                <div class="hero-specialties">
+                    <span class="specialty-tag" data-i18n="hero_specialty_1">🌍 全球部署</span>
+                    <span class="specialty-tag" data-i18n="hero_specialty_2">⚡ 新能源IoT</span>
+                    <span class="specialty-tag" data-i18n="hero_specialty_3">🛒 电商全链路</span>
+                    <span class="specialty-tag" data-i18n="hero_specialty_4">📊 大数据平台</span>
+                </div>
+                
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-number" data-i18n="hero_stat_1_num">20+</div>
+                        <div class="highlight-label" data-i18n="hero_stat_1_label">国家覆盖</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number" data-i18n="hero_stat_2_num">500万+</div>
+                        <div class="highlight-label" data-i18n="hero_stat_2_label">设备接入</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-number" data-i18n="hero_stat_3_num">100万+</div>
+                        <div class="highlight-label" data-i18n="hero_stat_3_label">服务用户</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="hero_btn_projects">查看项目</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span data-i18n="hero_btn_contact">联系合作</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title neon-text" data-i18n="about_title">主人公档案</h2>
+            <div class="about-content">
+                <div class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="rank-badge" data-i18n="about_rank">SSR</div>
+                        <div class="level-badge" data-i18n="about_level">LV.99</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="character-name" data-i18n="about_name">全能开发者</h3>
+                        <p class="character-title" data-i18n="about_subtitle">「代码世界的主宰者」</p>
+                        <div class="character-story">
+                            <p data-i18n="about_story_1">🎮 在数字世界中征战5年，完成了50+个史诗级任务</p>
+                            <p data-i18n="about_story_2">⚔️ 掌握全平台开发技能，从Web到移动端，从桌面到云端</p>
+                            <p data-i18n="about_story_3">🌍 服务全球50+国家，精通中英双语，跨国项目经验丰富</p>
+                            <p data-i18n="about_story_4">🏆 帮助30+位冒险者实现他们的梦想项目</p>
+                            <p data-i18n="about_story_5">✨ 特殊能力：将创意转化为现实的魔法</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label" data-i18n="about_stat_1">完成任务</div>
+                        <div class="stat-shine"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-number" data-target="30">0</div>
+                        <div class="stat-label" data-i18n="about_stat_2">合作伙伴</div>
+                        <div class="stat-shine"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label" data-i18n="about_stat_3">征战年数</div>
+                        <div class="stat-shine"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🌟</div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label" data-i18n="about_stat_4">满意度</div>
+                        <div class="stat-shine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能树 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title neon-text" data-i18n="skills_title">技能树</h2>
+            <div class="skills-grid">
+                <div class="skill-card skill-legendary">
+                    <div class="skill-border"></div>
+                    <div class="skill-glow"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-level">MAX</div>
+                    </div>
+                    <h3 data-i18n="skill_1_title">全平台APP开发</h3>
+                    <p class="skill-desc" data-i18n="skill_1_desc">iOS & Android & 小程序全栈开发</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="--progress: 99%"></div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">UniApp</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card skill-legendary">
+                    <div class="skill-border"></div>
+                    <div class="skill-glow"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon">🛒</div>
+                        <div class="skill-level">MAX</div>
+                    </div>
+                    <h3 data-i18n="skill_2_title">电商全链路</h3>
+                    <p class="skill-desc" data-i18n="skill_2_desc">从前端到支付到供应链的完整解决方案</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="--progress: 98%"></div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Payment</span>
+                        <span class="tech-tag">Order Engine</span>
+                        <span class="tech-tag">Inventory</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card skill-epic">
+                    <div class="skill-border"></div>
+                    <div class="skill-glow"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-level">MAX</div>
+                    </div>
+                    <h3 data-i18n="skill_3_title">物联网架构</h3>
+                    <p class="skill-desc" data-i18n="skill_3_desc">设备接入 · 协议开发 · 边缘计算</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="--progress: 96%"></div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">CoAP</span>
+                        <span class="tech-tag">LoRa</span>
+                        <span class="tech-tag">Edge Computing</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card skill-epic">
+                    <div class="skill-border"></div>
+                    <div class="skill-glow"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-level">LV.95</div>
+                    </div>
+                    <h3 data-i18n="skill_4_title">大数据处理</h3>
+                    <p class="skill-desc" data-i18n="skill_4_desc">海量数据采集 · 分析 · 可视化</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="--progress: 95%"></div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">Spark</span>
+                        <span class="tech-tag">Flink</span>
+                        <span class="tech-tag">ClickHouse</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card skill-rare">
+                    <div class="skill-border"></div>
+                    <div class="skill-glow"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon">☁️</div>
+                        <div class="skill-level">LV.94</div>
+                    </div>
+                    <h3 data-i18n="skill_5_title">云原生架构</h3>
+                    <p class="skill-desc" data-i18n="skill_5_desc">微服务 · 容器化 · DevOps</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="--progress: 94%"></div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">K8s</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Istio</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card skill-rare">
+                    <div class="skill-border"></div>
+                    <div class="skill-glow"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon">🔐</div>
+                        <div class="skill-level">LV.92</div>
+                    </div>
+                    <h3 data-i18n="skill_6_title">安全防护</h3>
+                    <p class="skill-desc" data-i18n="skill_6_desc">数据加密 · 身份认证 · 风控系统</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="--progress: 92%"></div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">OAuth2.0</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">Risk Control</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 战绩殿堂 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title neon-text" data-i18n="projects_title">战绩殿堂</h2>
+            <div class="projects-grid">
+                <div class="project-card project-legendary">
+                    <div class="project-rank">SSR</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-icon">⚡</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project_1_title">全球新能源监控平台</h3>
+                        <p class="project-subtitle" data-i18n="project_1_subtitle">「传说级IoT项目」</p>
+                        <p class="project-desc" data-i18n="project_1_desc">覆盖全球50+国家的光伏逆变器监控平台，实时监测百万级设备运行状态，支持多时区、多语言、多币种结算</p>
+                        <div class="project-stats">
+                            <span>⚔️ SSS</span>
+                            <span>⭐ 5.0</span>
+                            <span>🌍 50+</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>Inverter Protocol</span>
+                            <span>Modbus</span>
+                            <span>Global Deploy</span>
+                            <span>Time-Series DB</span>
+                            <span>CDN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card project-legendary">
+                    <div class="project-rank">SSR</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-icon">🔋</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project_2_title">储能系统智能管理</h3>
+                        <p class="project-subtitle" data-i18n="project_2_subtitle">「传说级能源项目」</p>
+                        <p class="project-desc" data-i18n="project_2_desc">光储充一体化解决方案，实现逆变器、储能电池、充电桩的协同控制，支持削峰填谷、需量管理、能源交易</p>
+                        <div class="project-stats">
+                            <span>⚔️ SSS</span>
+                            <span>⭐ 5.0</span>
+                            <span>⚡ GW</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>BMS</span>
+                            <span>Energy Dispatch</span>
+                            <span>AI Forecast</span>
+                            <span>Edge Computing</span>
+                            <span>Real-time Control</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card project-epic">
+                    <div class="project-rank">SR</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-icon">🛒</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project_3_title">跨境电商平台</h3>
+                        <p class="project-subtitle" data-i18n="project_3_subtitle">「史诗级全链路项目」</p>
+                        <p class="project-desc" data-i18n="project_3_desc">千万级用户的跨境电商生态，涵盖商品、订单、支付、物流全流程，支持多币种、多语言、全球仓储</p>
+                        <div class="project-stats">
+                            <span>⚔️ SS</span>
+                            <span>⭐ 4.9</span>
+                            <span>👥 10M+</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>Microservices</span>
+                            <span>Distributed TX</span>
+                            <span>Redis Cluster</span>
+                            <span>Payment Gateway</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card project-epic">
+                    <div class="project-rank">SR</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-icon">📊</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project_4_title">能源大数据分析平台</h3>
+                        <p class="project-subtitle" data-i18n="project_4_subtitle">「史诗级数据项目」</p>
+                        <p class="project-desc" data-i18n="project_4_desc">新能源发电数据实时采集与分析，支持发电预测、设备健康度评估、收益分析，日处理亿级时序数据</p>
+                        <div class="project-stats">
+                            <span>⚔️ SS</span>
+                            <span>⭐ 4.9</span>
+                            <span>💾 100M+/day</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>Kafka</span>
+                            <span>Flink</span>
+                            <span>InfluxDB</span>
+                            <span>ML</span>
+                            <span>Real-time</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card project-rare">
+                    <div class="project-rank">R</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-icon">☀️</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project_5_title">分布式光伏云平台</h3>
+                        <p class="project-subtitle" data-i18n="project_5_subtitle">「稀有级能源项目」</p>
+                        <p class="project-desc" data-i18n="project_5_desc">户用光伏全生命周期管理，从勘测设计到并网发电，支持收益结算、补贴申报、设备保险</p>
+                        <div class="project-stats">
+                            <span>⚔️ S</span>
+                            <span>⭐ 4.8</span>
+                            <span>🏠 500K+</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>GIS</span>
+                            <span>Power Forecast</span>
+                            <span>Settlement</span>
+                            <span>Blockchain</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card project-rare">
+                    <div class="project-rank">R</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-icon">🔌</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="project_6_title">充电桩运营平台</h3>
+                        <p class="project-subtitle" data-i18n="project_6_subtitle">「稀有级充电项目」</p>
+                        <p class="project-desc" data-i18n="project_6_desc">新能源汽车充电网络运营平台，支持扫码充电、预约排队、动态定价、负荷调控</p>
+                        <div class="project-stats">
+                            <span>⚔️ S</span>
+                            <span>⭐ 4.8</span>
+                            <span>🔌 100K+</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>OCPP</span>
+                            <span>Payment</span>
+                            <span>Navigation</span>
+                            <span>Load Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系召唤 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title neon-text" data-i18n="contact_title">联系召唤</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 data-i18n="contact_heading">开启新的冒险</h3>
+                        <p data-i18n="contact_intro">准备好开始你的项目了吗？让我们一起创造传奇！</p>
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <div class="contact-label" data-i18n="contact_email_label">邮件传送</div>
+                                    <div class="contact-value">carlzhu@live.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <div>
+                                    <div class="contact-label" data-i18n="contact_phone_label">即时通讯</div>
+                                    <div class="contact-value">+86 13812910362</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <div class="contact-label" data-i18n="contact_location_label">据点位置</div>
+                                    <div class="contact-value" data-i18n="contact_location_value">中国 · 江苏苏州</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <span>GitHub</span>
+                                <span class="link-glow"></span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span>LinkedIn</span>
+                                <span class="link-glow"></span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span>WeChat</span>
+                                <span class="link-glow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label data-i18n="contact_form_name">你的名字</label>
+                        <input type="text" data-i18n="contact_form_name_placeholder" placeholder="输入你的名字" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="contact_form_email">邮箱地址</label>
+                        <input type="email" data-i18n="contact_form_email_placeholder" placeholder="输入你的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="contact_form_message">任务描述</label>
+                        <textarea data-i18n="contact_form_message_placeholder" placeholder="告诉我你的项目想法..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span data-i18n="contact_form_submit">发起召唤</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">ZHURG</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">© 2026 ZHURG. <span data-i18n="footer_text">在代码的世界中创造传奇.</span></p>
+                <div class="footer-badge" data-i18n="footer_badge">⚡ POWERED BY PASSION</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
